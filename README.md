@@ -1,4 +1,4 @@
-# iamekansh
+# IamEkansh
 
 Personal portfolio site — built to exist on the internet.
 
