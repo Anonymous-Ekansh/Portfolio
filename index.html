@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ekansh Jain — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+
+<nav>
+  <div class="nav-logo">&lt;<span>EJ</span>/&gt;</div>
+  <ul class="nav-links">
+    <li><a href="#about" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'}); return false;">about</a></li>
+    <li><a href="#skills" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'}); return false;">skills</a></li>
+    <li><a href="#projects" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'}); return false;">projects</a></li>
+    <li><a href="#contact" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'}); return false;">contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-accent-line"></div>
+  <div class="hero-inner">
+    <div class="available-badge">
+      <span class="available-dot"></span>
+      Always ready to collaborate
+    </div>
+    <div class="hero-tag">// B.Tech CSE Student · Developer</div>
+    <h1 class="hero-name">
+      Ekansh<br>
+      <span class="line2" style="-webkit-text-stroke: 0; color: var(--text);">Jain.</span>
+    </h1>
+    <p class="hero-desc">
+      BTech CSE student with the energy of someone who has read too much and slept too little. I build things, break things, think about the universe, and occasionally those three overlap.
+    </p>
+    <div class="hero-cta">
+      <a href="https://github.com/Anonymous-Ekansh" target="_blank" class="btn btn-primary">View my work</a>
+      <a href="https://www.linkedin.com/in/ekansh-jain-cryptotechie/" target="_blank" class="btn btn-outline">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="terminal">
+    <div class="terminal-bar">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+      <span class="terminal-title">about.js</span>
+    </div>
+    <div class="terminal-body">
+      <div><span class="t-blue">const</span> <span class="t-white">dev</span> = {</div>
+      <div>&nbsp;&nbsp;<span class="t-green">name</span>: <span class="t-red">"Ekansh Jain"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="t-green">alias</span>: <span class="t-red">"cryptotechie"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="t-green">role</span>: <span class="t-red">"CSE Student"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="t-green">focus</span>: <span class="t-red">"Dev + Blockchain"</span>,</div>
+      <div>&nbsp;&nbsp;<span class="t-green">skills</span>: [</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-red">"C++"</span>, <span class="t-red">"JavaScript"</span>,</div>
+      <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-red">"HTML/CSS"</span>, <span class="t-red">"Git"</span></div>
+      <div>&nbsp;&nbsp;],</div>
+      <div>&nbsp;&nbsp;<span class="t-green">available</span>: <span class="t-blue">true</span></div>
+      <div>};</div>
+      <div style="margin-top:8px;"><span style="color:var(--muted);">// ready to build something great</span></div>
+      <div>&nbsp;<span class="cursor-blink"></span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-label">01 // about</div>
+  <h2 class="section-title reveal">Who I am.</h2>
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p>I'm a <strong>theosophist</strong> who somehow ended up becoming a finance + tech guy. I enjoy thinking about big ideas, building useful things, and occasionally going down random rabbit holes about how the world works.</p>
+      <p>My goal is simple — <strong>create something that actually matters</strong> and makes a real impact someday. I did get a 10 SGPA in my first semester, which was nice… but honestly, it just means the grind continues.</p>
+      <p>Outside of all this, I like experimenting with ideas, working on small projects, and constantly trying to understand how things work a little better than yesterday.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card">
+        <div class="stat-num">312</div>
+        <div class="stat-label">Cups of coffee</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">47</div>
+        <div class="stat-label">Ideas started</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">9</div>
+        <div class="stat-label">Projects abandoned</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" style="font-size:1.4rem;">countless</div>
+        <div class="stat-label">Bugs fixed</div>
+      </div>
+      <div class="stat-card stat-card-center">
+        <div class="stat-num" style="font-size:1.4rem;">∞</div>
+        <div class="stat-label">Overthinking</div>
+      </div>
+      <div style="grid-column: 1 / -1;">
+        <div style="font-size: 0.65rem; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">// clubs & societies</div>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 0.6rem; background: var(--bg2); border: 1px solid var(--border); border-radius: 4px; padding: 0.6rem 1rem; flex: 1; min-width: 120px; transition: border-color 0.2s;" onmouseenter="this.style.borderColor='var(--accent)'" onmouseleave="this.style.borderColor='var(--border)'">
+            <span style="font-size: 0.65rem; color: var(--accent); font-weight: 700;">ACM</span>
+            <span style="font-size: 0.7rem; color: var(--muted);">Association for Computing Machinery</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.6rem; background: var(--bg2); border: 1px solid var(--border); border-radius: 4px; padding: 0.6rem 1rem; flex: 1; min-width: 120px; transition: border-color 0.2s;" onmouseenter="this.style.borderColor='var(--accent)'" onmouseleave="this.style.borderColor='var(--border)'">
+            <span style="font-size: 0.65rem; color: var(--accent); font-weight: 700;">FINVEST</span>
+            <span style="font-size: 0.7rem; color: var(--muted);">Finance & Investment Club</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.6rem; background: var(--bg2); border: 1px solid var(--border); border-radius: 4px; padding: 0.6rem 1rem; flex: 1; min-width: 120px; transition: border-color 0.2s;" onmouseenter="this.style.borderColor='var(--accent)'" onmouseleave="this.style.borderColor='var(--border)'">
+            <span style="font-size: 0.65rem; color: var(--accent); font-weight: 700;">E-CELL</span>
+            <span style="font-size: 0.7rem; color: var(--muted);">Entrepreneurship Cell</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-label">02 // skills</div>
+  <h2 class="section-title reveal">What I work with.</h2>
+  <div class="skills-grid reveal">
+    <div class="skill-group">
+      <div class="skill-group-title">Languages</div>
+      <div class="skill-tags">
+        <span class="tag">C++</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Tools & Platforms</div>
+      <div class="skill-tags">
+        <span class="tag">Git</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">VS Code</span>
+        <span class="tag">Linux</span>
+        <span class="tag">Vercel</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Currently Learning</div>
+      <div class="skill-tags">
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">DSA</span>
+        <span class="tag">SQL</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Soft Skills</div>
+      <div class="skill-tags">
+        <span class="tag">Problem Solving</span>
+        <span class="tag">Team Work</span>
+        <span class="tag">Communication</span>
+        <span class="tag">Fast Learner</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-label">03 // projects</div>
+  <h2 class="section-title reveal">Things I've built.</h2>
+  <div class="projects-grid reveal">
+
+    <!-- Featured Project -->
+    <a class="project-card" href="https://github.com/Anonymous-Ekansh/Kinexis" target="_blank">
+      <div class="project-num">// 01 · featured</div>
+      <div class="project-name">Kinexis</div>
+      <div class="project-desc">A platform that helps university students discover people with similar interests, collaborate on projects, and build meaningful connections across batches.</div>
+      <div class="project-stack">
+        <span class="stack-tag">Next.js</span>
+        <span class="stack-tag">TypeScript</span>
+        <span class="stack-tag">HTML/CSS</span>
+      </div>
+      <div class="project-links">
+        <span class="project-link">GitHub</span>
+        <span class="project-link" onclick="event.preventDefault(); window.open('https://kinexis.vercel.app', '_blank')">Live Demo</span>
+      </div>
+    </a>
+
+    <div class="project-card" style="opacity:0.5; border-style: dashed;">
+      <div class="project-num">// coming soon</div>
+      <div class="project-name" style="color:var(--muted);">Project 02</div>
+      <div class="project-desc">Next project in the works. Check back soon.</div>
+    </div>
+
+    <div class="project-card" style="opacity:0.5; border-style: dashed;">
+      <div class="project-num">// coming soon</div>
+      <div class="project-name" style="color:var(--muted);">Project 03</div>
+      <div class="project-desc">More to come. Always building.</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-label">04 // contact</div>
+  <h2 class="section-title reveal">Let's connect.</h2>
+  <div class="contact-inner reveal">
+    <p class="contact-desc">
+      Always <strong style="color:var(--accent)">ready to collaborate</strong>. If you're working on something interesting, my inbox is always open.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:your@email.com" class="contact-link">
+        <span class="contact-link-label">Email</span>
+        your@email.com
+      </a>
+      <a href="https://www.linkedin.com/in/ekansh-jain-cryptotechie/" target="_blank" class="contact-link">
+        <span class="contact-link-label">LinkedIn</span>
+        linkedin.com/in/ekansh-jain-cryptotechie
+      </a>
+      <a href="https://github.com/Anonymous-Ekansh" target="_blank" class="contact-link">
+        <span class="contact-link-label">GitHub</span>
+        github.com/Anonymous-Ekansh
+      </a>
+      <a href="#" class="contact-link">
+        <span class="contact-link-label">Resume</span>
+        Download PDF ↓
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>&lt;EkanshJain/&gt; — B.Tech CSE</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
