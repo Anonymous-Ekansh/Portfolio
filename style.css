@@ -24,6 +24,12 @@ body {
   cursor: none;
 }
 
+/* On touch/mobile devices: restore default cursor, hide custom cursor */
+@media (hover: none) and (pointer: coarse) {
+  body { cursor: auto; }
+  .cursor, .cursor-ring { display: none !important; }
+}
+
 /* Custom cursor */
 .cursor {
   position: fixed;
