@@ -1,15 +1,19 @@
-// Custom cursor
-const cursor = document.getElementById('cursor');
+// Custom cursor — desktop/pointer devices only
+const isPointerDevice = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-document.addEventListener('mousemove', e => {
-  cursor.style.left = e.clientX - 6 + 'px';
-  cursor.style.top = e.clientY - 6 + 'px';
-});
+if (isPointerDevice) {
+  const cursor = document.getElementById('cursor');
 
-document.querySelectorAll('a, button, .project-card, .skill-group, .stat-card').forEach(el => {
-  el.addEventListener('mouseenter', () => { cursor.style.transform = 'scale(2)'; });
-  el.addEventListener('mouseleave', () => { cursor.style.transform = 'scale(1)'; });
-});
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX - 6 + 'px';
+    cursor.style.top = e.clientY - 6 + 'px';
+  });
+
+  document.querySelectorAll('a, button, .project-card, .skill-group, .stat-card').forEach(el => {
+    el.addEventListener('mouseenter', () => { cursor.style.transform = 'scale(2)'; });
+    el.addEventListener('mouseleave', () => { cursor.style.transform = 'scale(1)'; });
+  });
+}
 
 // Scroll reveal
 const reveals = document.querySelectorAll('.reveal');
