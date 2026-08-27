@@ -1,4 +1,4 @@
-// Custom cursor — desktop/pointer devices only
+
 const isPointerDevice = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
 if (isPointerDevice) {
@@ -15,7 +15,7 @@ if (isPointerDevice) {
   });
 }
 
-// Scroll reveal
+
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver(entries => {
   entries.forEach((entry, i) => {
@@ -26,7 +26,7 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 reveals.forEach(el => observer.observe(el));
 
-// Nav active state
+
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('nav');
   nav.style.background = window.scrollY > 50
@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
     : 'rgba(10,10,15,0.85)';
 });
 
-// Smooth nav clicks
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const target = document.querySelector(this.getAttribute('href'));
