@@ -1,6 +1,6 @@
 # IamEkansh
 
-Personal portfolio site — built to exist on the internet.
+Personal portfolio site - building my presence on the internet.
 
 ## Stack
 HTML · CSS · JavaScript
